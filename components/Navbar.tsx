@@ -32,26 +32,36 @@ export default function Navbar() {
       </div>
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[21rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+        <motion.ul className="flex w-[21rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
+                   initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   transition={{ ease: 'linear', duration: 0.8 }}
+        >
           {
             links.map(link => (
-              <motion.li className="h-3/4 flex items-center justify-center relative"
+              <li className="h-3/4 flex items-center justify-center relative"
                          key={link.hash}
-                         initial={{ opacity: 0 }}
-                         animate={{ opacity: 1 }}
-                         transition={{ ease: 'linear', duration: 0.8 }}
               >
                 <Link className="flex w-full items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
-                      href={link.hash}
+                      href={`/${link.hash}`}
                 >
                   {
                     link.name
                   }
                 </Link>
-              </motion.li>
+              </li>
             ))
           }
-        </ul>
+
+          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
+                href="https://www.jingoo.com/infos/acces.php/4842833">
+            Albums Clients
+          </Link>
+          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
+                href="/online-store">
+            Boutique
+          </Link>
+        </motion.ul>
       </nav>
 
     </header>

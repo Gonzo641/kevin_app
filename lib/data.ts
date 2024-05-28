@@ -15,16 +15,16 @@ export const links = [
         name: "À propos",
         hash: "#apropos",
       },
-    {
-      name: "Albums Clients",
-      hash: "#albums",
-    },
+    // {
+    //   name: "Albums Clients",
+    //   hash: "#albums",
+    // },
     {
         name: "Contact",
         hash: "#contact",
       },
-    {
-      name: "Boutique",
-      hash: "#boutique",
-    },
+    // {
+    //   name: "Boutique",
+    //   hash: "#boutique",
+    // },
   ] as const;
