@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Header() {
 
     return (
-      <div id="accueil" className="flex justify-center items-center text-white w-full h-full">
+      <div id="accueil" className="flex justify-center items-center text-white w-full h-screen">
         <Image src={HomePic} alt="image"className="w-full h-full object-cover" />
         <div className="flex flex-col justify-center items-center mt-[16rem] absolute">
           <motion.div initial={{ opacity: 0, y: 100}}
