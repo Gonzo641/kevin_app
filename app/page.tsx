@@ -12,6 +12,7 @@ import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import LogoIntersection from "@/components/LogoIntersection";
+import { Avis } from "@/components/Avis";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Prestations />
       <Portfolio />
       <About />
+      <Avis />
       <LogoIntersection />
       <Contact />
     </main>
