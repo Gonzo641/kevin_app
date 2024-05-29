@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export default function Prestations() {
   return (
-    <section id="prestations" className="pt-20 scroll-mt-6">
+    <section id="prestations" className="pt-20 scroll-mt-6 overflow-hidden">
         <div className="flex justify-center items-center pb-4">
             <motion.h2 className="text-white text-4xl"
                        initial={{ opacity: 0, y: 100}}

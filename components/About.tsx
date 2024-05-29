@@ -77,7 +77,7 @@ import Kevin from "@/public/images/Kevin_about.jpg";
 
 const About = () => {
   return (
-    <section id="apropos" className="grid xl:grid-cols-2 grid-cols-1 mt-20 pb-20 scroll-mt-28">
+    <section id="apropos" className="grid xl:grid-cols-2 grid-cols-1 mt-20 pb-20 scroll-mt-28 overflow-hidden">
         <motion.div className="flex justify-center items-center"
                     initial={{ opacity: 0, x: -100}}
                     whileInView={{ opacity: 1, x: 0 }}
