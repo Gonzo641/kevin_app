@@ -42,9 +42,9 @@ export default function Prestations() {
                         }}
             >
                 <Link href="/photo">
-                    <div className="flex justify-center items-center">
-                        <Image src={photo2} alt="image" className="hover:scale-105 hover:opacity-50 transition duration-500"/>
-                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl">
+                    <div className="flex justify-center items-center group">
+                        <Image src={photo2} alt="image" className="group-hover:scale-105 group-hover:opacity-50 transition duration-500"/>
+                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl opacity-0 group-hover:opacity-100 transition duration-500">
                             Photo
                         </h3>
                     </div>
@@ -62,9 +62,9 @@ export default function Prestations() {
                         }}
             >
                 <Link href="/video">
-                    <div className="flex justify-center items-center">
-                        <Image src={video} alt="image" className="hover:scale-105 hover:opacity-50 transition duration-500"/>
-                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl">
+                    <div className="flex justify-center items-center group">
+                        <Image src={video} alt="image" className="group-hover:scale-105 group-hover:opacity-50 transition duration-500"/>
+                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl opacity-0 group-hover:opacity-100 transition duration-500">
                             Vidéo
                         </h3>
                     </div>
@@ -82,9 +82,9 @@ export default function Prestations() {
                         }}
             >
                 <Link href="/locations">
-                    <div className="flex justify-center items-center">
-                        <Image src={loc2} alt="image" className="hover:scale-105 hover:opacity-50 transition duration-500" />
-                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl">
+                    <div className="flex justify-center items-center group">
+                        <Image src={loc2} alt="image" className="group-hover:scale-105 group-hover:opacity-50 transition duration-500" />
+                        <h3 className="absolute text-white text-6xl sm:text-8xl xl:text-6xl opacity-0 group-hover:opacity-100 transition duration-500">
                             Locations
                         </h3>
                     </div>
