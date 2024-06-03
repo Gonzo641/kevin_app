@@ -22,6 +22,7 @@ const config = {
         'kev': "url('/images/kev-avis.jpg')",
       },
       colors: {
+        kev: "#8c705a",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
