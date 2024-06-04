@@ -58,6 +58,14 @@ import soiree4 from "@/public/images/prestations/mariage/mariage-soiree4.png";
 import soiree5 from "@/public/images/prestations/mariage/mariage-soiree5.png";
 import soiree6 from "@/public/images/prestations/mariage/mariage-soiree6.png";
 
+import bonCadeau from "@/public/images/boutique/bon-cadeau.png";
+import cadre1 from "@/public/images/boutique/cadre1.png";
+import cadre2 from "@/public/images/boutique/cadre2.png";
+import cadre3 from "@/public/images/boutique/cadre3.png";
+import cadre4 from "@/public/images/boutique/cadre4.png";
+import cadre5 from "@/public/images/boutique/cadre5.png";
+import cadre6 from "@/public/images/boutique/cadre6.png";
+
 
 
 export const links = [
@@ -136,6 +144,64 @@ export const links = [
       title: "identite",
       imageUrl: identite,
       link: "/identite"
+    },
+
+  ] as const;
+
+  export const storeData = [
+    {
+      title: "Grossesse",
+      imageUrl: bonCadeau,
+      price: 100 ,
+      // link: "/mariage"
+    },
+    {
+      title: "Famille",
+      imageUrl: bonCadeau,
+      price: 100 ,
+      // link: "/grossesse"
+    },
+    {
+      title: "Couple",
+      imageUrl: bonCadeau,
+      price: 100 ,
+      // link: "/couple"
+    },
+    {
+      title: "Cadre B.S.A Empire Star",
+      imageUrl: cadre1,
+      price: 190 ,
+      // link: "/famille"
+    },
+    {
+      title: "Cadre DS MALTTER Type G",
+      imageUrl: cadre2,
+      price: 190 ,
+      // link: "/entreprise"
+    },
+    {
+      title: "Cadre MATCHLESS",
+      imageUrl: cadre3,
+      price: 190 ,
+      // link: "/immobilier"
+    },
+    {
+      title: "Cadre NORTON ES2",
+      imageUrl: cadre4,
+      price: 190 ,
+      // link: "/packshot"
+    },
+    {
+      title: "Cadre NORTON M18",
+      imageUrl: cadre5,
+      price: 190 ,
+      // link: "/scolaire"
+    },
+    {
+      title: "NORTON M18 compo",
+      imageUrl: cadre6,
+      price: 190 ,
+      // link: "/identite"
     },
 
   ] as const;

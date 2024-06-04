@@ -25,7 +25,7 @@ export default function Contact() {
                             }}
                          transition={{
                             duration: 0.8,
-                            delay: 1,
+                            delay: 0.6,
                             ease: [0, 0.71, 0.2, 1.01]
                          }}
               >
@@ -38,7 +38,7 @@ export default function Contact() {
                           animate={{ opacity: 1, y: 0 }}
                           transition={{
                             duration: 0.8,
-                            delay: 1,
+                            delay: 0.8,
                             ease: [0, 0.71, 0.2, 1.01]
                           }}
               />
@@ -51,7 +51,7 @@ export default function Contact() {
                         }}
                       transition={{
                         duration: 0.8,
-                        delay: 1,
+                        delay: 0.8,
                         ease: [0, 0.71, 0.2, 1.01]
                       }}
           >

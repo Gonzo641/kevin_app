@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import grossesse from "@/public/images/prestations/grossesse/grossesse3.png";
+import grossesse2 from "@/public/images/prestations/grossesse/grossesse2.png";
+import { ButtonOrder } from "@/components/ButtonOrder";
 
 
 export default function GrossessePage() {
@@ -17,7 +19,7 @@ export default function GrossessePage() {
                   }}
       >
         <div className="text-center">
-          <h3 className="sm:text-7xl text-5xl uppercase pb-8">
+          <h3 className="sm:text-7xl text-5xl uppercase pb-8 font-sans">
             grossesse
           </h3>
           <p className="text-lg">
@@ -108,7 +110,7 @@ export default function GrossessePage() {
           </div>
         </motion.div>
 
-        <motion.div className="flex items-center justify-center mt-10 mb-56 xl:w-[89rem] xl:h-[25rem] overflow-hidden rounded-xl"
+        <motion.div className="flex items-center justify-center mt-10 mb-20 xl:w-[89rem] xl:h-[25rem] overflow-hidden rounded-xl"
                     initial={{ opacity: 0, x: 100}}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
@@ -131,6 +133,14 @@ export default function GrossessePage() {
             </span>
           </div>
         </motion.div>
+
+        <div className="flex flex-col items-center justify-center ">
+          <p>
+            Vous pouvez commander le shooting de votre choix.
+            Il sera livré à votre domicile sous forme de chèque cadeau.
+          </p>
+          <ButtonOrder />
+        </div>
     </section>
   )
 }
