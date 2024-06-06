@@ -42,7 +42,7 @@ export default function Navbar() {
               <li className="h-3/4 flex items-center justify-center relative"
                          key={link.hash}
               >
-                <Link className="flex w-full items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
+                <Link className="flex w-full items-center justify-center px-3 py-3 text-[#8c705a] font-sans hover:text-gray-500 transition text-sm xl:text-base"
                       href={`/${link.hash}`}
                 >
                   {
@@ -53,11 +53,11 @@ export default function Navbar() {
             ))
           }
 
-          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
+          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] font-sans hover:text-gray-500 transition text-sm xl:text-base"
                 href="https://www.jingoo.com/infos/acces.php/4842833">
             Albums Clients
           </Link>
-          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] hover:text-gray-500 transition sm:text-lg"
+          <Link className="flex items-center justify-center px-3 py-3 text-[#8c705a] font-sans hover:text-gray-500 transition text-sm xl:text-base"
                 href="/online-store">
             Boutique
           </Link>

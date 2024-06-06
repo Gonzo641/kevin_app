@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import Projecteur from "@/public/images/video-proj.png";
 import EcranGeant from "@/public/images/ecran-geant.png";
 import SectionHeading from "@/components/SectionHeading";
+import PolygonBackground from "@/components/PolygonBackground";
 
 export default function page() {
   return (
     <section>
+      <PolygonBackground />
       <SectionHeading>Locations</SectionHeading>
       <div className="grid xl:grid-cols-2 grid-cols-1 rounded-lg pt-20 pb-20 2xl:px-80 px-10 gap-2">
         <motion.div className="bg-white flex flex-col rounded-xl p-10 gap-2 text-center"

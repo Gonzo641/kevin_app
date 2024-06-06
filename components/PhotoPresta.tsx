@@ -14,9 +14,10 @@ export default function PhotoPresta({ title, imageUrl, link }: PrestaProps) {
           <Image 
             src={imageUrl} 
             alt="image" 
-            className="rounded-lg transition duration-500 group-hover:opacity-50 group-hover:scale-105" 
-          />          
-          <h4 className="text-white text-2xl uppercase absolute opacity-0 group-hover:opacity-100 transition duration-500 border p-4">
+            className="" 
+          />
+          <div className="border w-60 h-[22rem] absolute group-hover:scale-95 transition duration-100" />          
+          <h4 className="text-white text-2xl uppercase font-semibold absolute opacity-0 group-hover:opacity-100 transition duration-500 p-4">
             {title}
           </h4>
         </div>

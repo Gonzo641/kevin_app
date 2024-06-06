@@ -4,11 +4,13 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import immobilier1 from "@/public/images/prestations/immobilier/immobilier1.png";
 import { ButtonOrder } from "@/components/ButtonOrder";
+import PolygonBackground from "@/components/PolygonBackground";
 
 
 export default function ImmobilierPage() {
   return (
     <section className="flex flex-col sm:px-28 px-4 text-white mt-32 gap-4">
+      <PolygonBackground />
       <motion.div initial={{ opacity: 0, y: 100}}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{

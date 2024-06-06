@@ -72,6 +72,11 @@
       @apply border-border;
     }
     body {
-      @apply bg-black text-foreground;
+      @apply text-foreground;
+      /* background: rgb(28,28,28);
+      background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(170,170,170,1) 46%, rgba(28,28,28,1) 100%); */
+      /* background: rgb(9,9,9);
+      background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(124,124,124,1) 50%, rgba(9,9,9,1) 100%); */
+      background-color: black;
     }
   }

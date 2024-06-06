@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useTransform, useScroll, motion } from 'framer-motion';
-import Lenis from "lenis";
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import useDimension from "@/hook/useDimension";
 import CarouselMobile from "./CarouselMobile";
+import { Dancing_Script } from "next/font/google";
+
+const inter2 = Dancing_Script({ subsets: ["latin"] });
 
 const images: string[] = [
     "Kev_Portfolio1.png",
@@ -35,29 +37,18 @@ export default function Portfolio() {
     const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
     const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.2]);
 
-    useEffect(() => {
-        const lenis = new Lenis();
-    
-        function raf(time: number) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-    
-        requestAnimationFrame(raf);
-    }, []);
-
     return (
-        <section id="portfolio" className="scroll-mt-28">
-        <div className="flex justify-center items-center pb-8">
-            <h2 className="text-white text-4xl">
-                Portfolio
-            </h2>
-        </div>
-            <div ref={container} className="sm:h-[117rem] h-[97rem] relative lg:flex flex-wrap md:flex-nowrap gap-4 p-12 box-border overflow-hidden hidden">
+        <section id="portfolio" className="scroll-mt-20">
+            <div className="flex justify-center items-center py-24">
+                <h2 className={`${inter2.className} text-6xl text-white`}>
+                    Portfolio
+                </h2>
+            </div>
+            <div ref={container} className="sm:h-[117rem] h-[97rem] w-full relative lg:flex justify-center items-center flex-wrap md:flex-nowrap gap-4 p-12 box-border overflow-hidden hidden">
                 <Column images={[images[0], images[1], images[2]]} y={y} />
                 <Column images={[images[3], images[4], images[5]]} y={y2} />
                 <Column images={[images[6], images[7], images[8]]} y={y3} />
-                <Column images={[images[9], images[10], images[11]]} y={y4}/>
+                {/* <Column images={[images[9], images[10], images[11]]} y={y4}/> */}
             </div>
             <CarouselMobile />
         </section>

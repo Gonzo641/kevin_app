@@ -5,11 +5,13 @@ import { BsDot } from "react-icons/bs";
 import Image from 'next/image';
 
 import identite1 from "@/public/images/prestations/identite/identite1.png";
+import PolygonBackground from '@/components/PolygonBackground';
 
 
 export default function IdentitePage() {
   return (
     <section className='mt-14 mb-20'>
+      <PolygonBackground />
       <div className="grid xl:grid-cols-2 grid-cols-1 rounded-lg pt-20 pb-20 2xl:px-[18rem] px-10 gap-2">
 
 

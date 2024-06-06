@@ -3,6 +3,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import { motion } from 'framer-motion';
+import PolygonBackground from '@/components/PolygonBackground';
 
 export default function VideoEntreprisePage() {
   const videoIds = ['76RXyB2ncqQ', 'v_voqJVdZq0','YR-uGwDhSvU', '9BK_1wuAsxo'];
@@ -10,6 +11,7 @@ export default function VideoEntreprisePage() {
 
   return (
     <section className='mt-10'>
+      <PolygonBackground />
       <div className="grid xl:grid-cols-2 grid-cols-1 rounded-lg pt-20 pb-20 2xl:px-40 px-10 gap-2">
         <div className='flex flex-col gap-4'>
           {videoIds.map((videoId) => (
@@ -77,7 +79,7 @@ export default function VideoEntreprisePage() {
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
             >
-                <span className="text-6xl relative text-gray-400">01</span>
+                <span className="text-6xl relative text-gray-900">01</span>
                 <span className="mt-1 text-xl absolute font-bold font-sans text-white">Vidéo d'1h</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 100}}
@@ -106,7 +108,7 @@ export default function VideoEntreprisePage() {
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
             >
-                <span className="text-6xl relative text-gray-400">02</span>
+                <span className="text-6xl relative text-gray-900">02</span>
                 <span className="mt-1 text-xl absolute font-bold font-sans text-white">Vidéo 1/2 journée</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 100}}
@@ -134,7 +136,7 @@ export default function VideoEntreprisePage() {
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
             >
-                <span className="text-6xl relative text-gray-400">03</span>
+                <span className="text-6xl relative text-gray-900">03</span>
                 <span className="mt-1 text-xl absolute font-bold font-sans text-white">Vidéo journée complète</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 100}}

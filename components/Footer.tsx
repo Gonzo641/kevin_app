@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center mt-2 sm:mt-0">
           <p className=" text-base pb-4 sm:pb-2 text-white">
-              Website by <Link href="https://jonathan-portfolio-sage.vercel.app/" className="hover:text-[#0a98a7]">Jonathan Gonzales</Link>
+              Website by <Link href="https://jonathan-portfolio-sage.vercel.app/" className="hover:text-gray-900 transition duration-150">Jonathan Gonzales</Link>
           </p>
         </div>
     </footer>

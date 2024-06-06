@@ -3,11 +3,13 @@
 import { motion } from 'framer-motion';
 import CarouselScolaire from "@/components/CarouselScolaire";
 import { BsDot } from "react-icons/bs";
+import PolygonBackground from '@/components/PolygonBackground';
 
 
 export default function ScolairePage() {
   return (
     <section className='mt-10 mb-20'>
+      <PolygonBackground />
       <div className="grid xl:grid-cols-2 grid-cols-1 rounded-lg pt-20 pb-20 2xl:px-40 px-10 gap-2">
 
 

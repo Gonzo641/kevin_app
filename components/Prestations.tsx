@@ -13,8 +13,8 @@ import { motion } from "framer-motion";
 export default function Prestations() {
   return (
     <section id="prestations" className="pt-20 scroll-mt-6 overflow-hidden">
-        <div className="flex justify-center items-center pb-4">
-            <motion.h2 className="text-white text-4xl"
+        <div className="flex justify-center items-center pb-10">
+            <motion.h2 className="text-white text-4xl font-sans"
                        initial={{ opacity: 0, y: 100}}
                        whileInView={{ opacity: 1, y: 0 }}
                        viewport={{
@@ -29,7 +29,7 @@ export default function Prestations() {
                 Prestations
             </motion.h2>
         </div>
-        <div className="grid xl:grid-cols-3 grid-cols-1 gap-6 xl:px-[8rem] px-4 xl:py-20 py-10 pb-10">
+        <div className="grid xl:grid-cols-3 grid-cols-1 gap-6 lg:px-[14rem] px-4 xl:py-20 py-10 pb-10">
             <motion.div initial={{ opacity: 0, x: 100}}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{

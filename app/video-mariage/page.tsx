@@ -7,12 +7,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import MariageNet from '@/public/images/mariageNet.png';
+import PolygonBackground from '@/components/PolygonBackground';
 
 const VideoMariagePage = () => {
   const videoIds = ['VwwC0kByjAM', 'RLM0N3FhBUU'];
 
   return (
     <section className='mt-10'>
+      <PolygonBackground />
       <div className="grid xl:grid-cols-2 grid-cols-1 rounded-lg pt-20 pb-20 2xl:px-40 px-10 gap-2">
         <div className='flex flex-col gap-4'>
           {videoIds.map((videoId) => (
@@ -87,7 +89,7 @@ const VideoMariagePage = () => {
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
             >
-                <span className="text-6xl relative text-gray-400">01</span>
+                <span className="text-6xl relative text-gray-900">01</span>
                 <span className="mt-1 text-xl absolute font-bold font-sans text-white">Spécial</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 100}}
@@ -124,7 +126,7 @@ const VideoMariagePage = () => {
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
             >
-                <span className="text-6xl relative text-gray-400">02</span>
+                <span className="text-6xl relative text-gray-900">02</span>
                 <span className="mt-1 text-xl absolute font-bold font-sans text-white">Préstige</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 100}}

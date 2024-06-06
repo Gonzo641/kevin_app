@@ -10,14 +10,17 @@ import { FaPinterestP } from "react-icons/fa6";
 
 import SubmitBtn from './SubmitBtn';
 import { sendEmail } from '@/actions/sendEmail';
+import { Dancing_Script } from "next/font/google";
+
+const inter2 = Dancing_Script({ subsets: ["latin"] });
 
 
 export default function Contact() {
   return (
-    <section id='contact' className='py-12 w[min(100%,38rem)] scroll-mt-20'>
+    <section id='contact' className='py-12 w[min(100%,38rem)] scroll-mt-20 font-sans'>
         <div className='xl:w-full max-w-[1400px] mx-auto px-8'>
           <div className='flex justify-center pb-2'>
-              <motion.h3 className='text-4xl text-white'
+              <motion.h3 className={`${inter2.className} text-6xl text-white`}
                          initial={{ opacity: 0, y: 100}}
                          whileInView={{ opacity: 1, y: 0 }}
                          viewport={{
@@ -57,27 +60,27 @@ export default function Contact() {
           >
             <a href="https://www.facebook.com/kevinabelardpro"
                target='_blank'
-               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-400'>
+               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-900'>
               <FaFacebook />
             </a>
             <a href="https://www.instagram.com/kevinabelardpro/"
                target='_blank'
-               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-400'>
+               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-900'>
               <FaInstagram />
             </a>
             <a href="https://www.youtube.com/channel/UCsfw_ib5v3X-v-3FhgAADaQ"
                target='_blank'
-               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-400'>
+               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-900'>
               <FaYoutube />
             </a>
             <a href="https://vimeo.com/kevinabelard"
                target='_blank'
-               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-400'>
+               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-900'>
               <FaVimeoV />
             </a>
             <a href="https://www.pinterest.fr/kevinabelardpro/_saved/"
                target='_blank'
-               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-400'>
+               className='text-xl hover:scale-[1.15] transition text-white hover:text-gray-900'>
               <FaPinterestP />
             </a>
           </motion.div>
